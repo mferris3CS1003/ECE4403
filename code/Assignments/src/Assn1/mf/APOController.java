@@ -1,11 +1,15 @@
 package Assn1.mf;
 
+import java.util.ArrayList;
+
 public class APOController {
 
 	public static void main(String[] args) {
-		Part p = new Part("A",2.0000);
-		System.out.println(p);
-		ArrayList <Part> partList = new ArrayList<Part>(); 
+		Part p1 = new Part("A","guh",2.0000);
+		System.out.println("Part " + p1.getcode()
+		 + ": " + p1.getDescription()
+		 + " $" + p1.getPrice());
+		ArrayList<Part> partList = new ArrayList<Part>(); 
 		
 
 	}
