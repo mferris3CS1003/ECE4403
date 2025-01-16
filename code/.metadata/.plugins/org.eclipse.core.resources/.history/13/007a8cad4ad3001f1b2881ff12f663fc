@@ -1,0 +1,17 @@
+package int_and_string_practice.mf;
+
+import java.util.ArrayList;
+
+import Assn1.mf.Part;
+
+public class u1_3 {
+	public static void main(String[] args) {
+	
+		System.out.println("test");
+ 
+		
+
+	}
+
+
+}

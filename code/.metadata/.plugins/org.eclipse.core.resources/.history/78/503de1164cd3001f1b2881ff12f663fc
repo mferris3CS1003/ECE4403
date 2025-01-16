@@ -1,0 +1,17 @@
+package int_and_string_practice.mf;
+
+
+
+public class u1_3 {
+	@SuppressWarnings("removal")
+	public static void main(String[] args) {
+	    int i1=1;
+	    Integer i2= Integer.valueOf(2);
+		System.out.println(i1+i2);
+ 
+		
+
+	}
+
+
+}
