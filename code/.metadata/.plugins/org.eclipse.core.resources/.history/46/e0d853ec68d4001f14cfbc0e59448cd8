@@ -14,7 +14,7 @@ public class Buyer {
 	  public int getStatus(String memberKEY) {
 		 if (memberKEY.equals(this.ACCESS_KEY)){
 			 this.status="MEMBER";
-			 buyerId=++latestBuyerId;
+			 buyerId=latestBuyerId++;
 		 }
 		return buyerId;
 	  }

@@ -1,0 +1,13 @@
+package Assn1.mf;
+
+public class Buyer {
+	  private int buyerId;
+	  private double cost;
+	  private String ACCESS_KEY;
+	public Buyer(String code, String Desc, double cost) {
+
+	}
+	  public String getcode() {
+		  return code;
+	  }
+}

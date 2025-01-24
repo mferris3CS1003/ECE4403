@@ -1,0 +1,16 @@
+package Assn1.mf;
+
+public class Buyer {
+	  private int buyerId;
+	  private int latestBuyerId;
+	  private String ACCESS_KEY;
+	  private String Status;
+	public Buyer(String code, String Desc, double cost) {
+	    this.buyerId = buyerId;
+	    this.cost =cost;
+	    this.Desc=Desc;
+	}
+	  public String initializeBuyerId() {
+		  buyerId=0;
+	  }
+}
