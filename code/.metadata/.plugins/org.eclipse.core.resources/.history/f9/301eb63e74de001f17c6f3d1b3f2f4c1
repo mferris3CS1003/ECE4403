@@ -1,0 +1,5 @@
+package Assn1.mf;
+import java.util.*;
+public class ArrayManipulator {
+//private int[] integers= {
+}

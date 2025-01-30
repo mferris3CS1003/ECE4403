@@ -1,0 +1,16 @@
+package Assn1.mf;
+
+import java.util.ArrayList;
+
+public class Order {
+	private int uniqueId;
+	ArrayList<Part> partList = new ArrayList<Part>();
+	public Order(int givenId) {
+		this.uniqueId=givenId;
+		 
+	}
+	public void addPart(Part P1) {
+		partList.add(P1);
+		
+	}
+}

@@ -1,0 +1,22 @@
+package Assn1.mf;
+import java.util.*;
+public class ArrayManipulator {
+
+public ArrayManipulator(int[] integers) {
+	Random ran = new Random();
+	for (int i=0; i< integers.length; i++) {
+	 integers[i]=ran.nextInt(50);
+	}}
+public int[] getEvenIndices(int[] integers) {
+	int counter=integers.length/2; 
+	int[] newIntegers= new int[counter];
+	//java rounds down hell yeah
+	for (int i=0; i<integers.length; i+=2) {
+	
+	}
+	
+	return newIntegers;
+}
+	}
+
+

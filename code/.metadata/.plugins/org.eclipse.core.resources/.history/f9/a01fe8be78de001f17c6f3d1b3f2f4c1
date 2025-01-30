@@ -1,0 +1,18 @@
+package Assn1.mf;
+import java.util.*;
+public class ArrayManipulator {
+
+public ArrayManipulator(int[] integers) {
+	Random ran = new Random();
+	for (int i=0; i< integers.length; i++) {
+	 integers[i]=ran.nextInt(50);
+	}
+public int[] getEvenIndices(int[] integers) {
+	int counter=0; 
+	
+	int[] newIntegers= new int[counter];
+	return newIntegers;
+}
+	}
+
+}

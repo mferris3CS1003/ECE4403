@@ -1,0 +1,10 @@
+package Assn1.mf;
+
+public class ArrayManipulator {
+	import java.util.*;
+private int[] integers= new int[10];
+	Random ran = new Random();
+	for (int i=0; i< integers.length(); i++) {
+	 integers[i]=ran.nextInt(50);
+	}
+	}

@@ -1,0 +1,48 @@
+package Assn1.mf;
+import java.util.*;
+public class ArrayManipulator {
+private int[] integers= new int[10];
+public ArrayManipulator() {
+	this.integers=integers;
+	Random ran = new Random();
+	for (int i=0; i< integers.length; i++) {
+	 integers[i]=ran.nextInt(50);
+	 
+	}
+	System.out.print(Arrays.toString(integers));;
+	}
+public int[] getEvenElements() {
+	int counter=integers.length/2; 
+	int[] newIntegers= new int[counter];
+	//java rounds down hell yeah
+	for (int i=0; i<integers.length; i+=2) {
+	newIntegers[i/2]=integers[i];
+	}
+	
+	return newIntegers;
+}
+public int[] getEvenIndices() {
+	int counter=0; 
+	
+	//java rounds down hell yeah
+	for (int i=0; i<integers.length; i+=2) {
+	int var=integers[i];
+	int temp =(var/2)*2;
+	if(temp==var) {counter++;}
+	
+	}
+	int[] newIntegers= new int[counter];
+	//java rounds down hell yeah
+	int secondCount=0;
+	for (int i=0; i<integers.length; i+=2) {
+	int var=integers[i];
+	int temp =(var/2)*2;
+	if(temp==var) {newintegers[secondCount]=var;
+	secondCount++;}
+	
+	}
+	return newIntegers;
+}
+	}
+
+

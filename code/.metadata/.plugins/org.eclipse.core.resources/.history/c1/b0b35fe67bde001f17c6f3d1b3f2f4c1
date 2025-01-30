@@ -1,0 +1,23 @@
+package Assn1.mf;
+import java.util.*;
+public class ArrayManipulator {
+private int[] integers= new int[10];
+public ArrayManipulator() {
+	this.integers=integers;
+	Random ran = new Random();
+	for (int i=0; i< integers.length; i++) {
+	 integers[i]=ran.nextInt(50);
+	}}
+public int[] getEvenElements() {
+	int counter=integers.length/2; 
+	int[] newIntegers= new int[counter];
+	//java rounds down hell yeah
+	for (int i=0; i<integers.length; i+=2) {
+	newIntegers[i/2]=newIntegers[i];
+	}
+	
+	return newIntegers;
+}
+	}
+
+

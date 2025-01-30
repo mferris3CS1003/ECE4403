@@ -1,6 +1,0 @@
-package int_and_string_practice.mf;
-
-public class BankAccount {
-private int accountNumber;
-private static int LatestNumber=1000;
-}

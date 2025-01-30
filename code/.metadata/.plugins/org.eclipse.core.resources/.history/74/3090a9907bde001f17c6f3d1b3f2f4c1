@@ -1,0 +1,30 @@
+package Assn1.mf;
+
+import java.util.*;
+
+public class APOController {
+
+	public static void main(String[] args) {
+		Random ran = new Random();
+		Part p1 = new Part("A","guh",2.0000);
+		System.out.println("Part " + p1.getcode()
+		 + ": " + p1.getDescription()
+		 + " $" + p1.getPrice());
+		ArrayList<Part> partList = new ArrayList<Part>(); 
+		
+        Buyer b1= new Buyer();
+        Buyer b2=new Buyer();
+        Buyer b3 = new Buyer();
+        Buyer b4 = new Buyer();
+        b1.getStatus("");
+        b2.getStatus("guh");
+        b3.getStatus("TEST");
+        b4.getStatus("TEST");
+        System.out.println(b1);
+        System.out.println(b2);
+        System.out.println(b3);
+        System.out.println(b4);
+        System.out.println(ran.nextInt(50));
+	}
+
+}

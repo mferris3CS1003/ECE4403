@@ -1,0 +1,77 @@
+package Assn1.mf;
+import java.util.*;
+import java.lang.*;
+public class ArrayListManipulator {
+
+ArrayList<Integer> integers = new ArrayList<Integer>();
+public ArrayListManipulator() {
+	
+	Random ran = new Random();
+	for (int i=0; i< integers.size(); i++) {
+	 integers.add(ran.nextInt(50));
+	 
+	}
+	System.out.println(Arrays.toString(integers));;
+	}
+public ArrayList<Integer> getEvenElements() {
+	int counter=integers.size()/2; 
+	ArrayList<Integer> newIntegers = new ArrayList<Integer>();
+	//java rounds down hell yeah
+	for (int i=0; i<integers.size(); i+=2) {
+	newIntegers.add(integers.get(i));
+	}
+	
+	return newIntegers;
+}
+public ArrayList<Integer> getEvenIndices() {
+	int counter=0; 
+	
+	//java rounds down hell yeah
+	for (int i=0; i<integers.size(); i+=1) {
+	int var=integers.get(i).intValue();
+	int temp =(var/2)*2;
+	if(temp==var) {counter++;}
+	
+	}
+	ArrayList<Integer> newIntegers = new ArrayList<Integer>();
+	//java rounds down hell yeah
+	int secondCount=0;
+	for (int i=0; i<integers.size(); i+=1) {
+	int var=integers.get(i).intValue();
+	int temp =(var/2)*2;
+	if(temp==var) {newIntegers.add(var);
+	secondCount++;}
+	
+	}
+	return newIntegers;
+}
+public Integer getFirst() {
+ return integers.get(0);
+}
+public Integer getLast() {
+	return integers.get(integers.size()-1);
+}
+public void addFive() {
+	int counter=integers.size()/2; 
+	
+	//java rounds down hell yeah
+	for (int i=0; i<integers.size(); i+=1) {
+	integers.set(i,Integer(integers.get(i).valueOf()+5));
+	}
+	
+	}
+public void sort() {
+Arrays.sort(integers);}
+public void reverse() {
+	int[] newIntegers= new int[integers.size()];
+	for (int i=1; i<=integers.size(); i+=1) {
+		newIntegers[i]=integers[(integers.size()-i)];}
+		
+	for (int i=0; i<integers.size(); i+=1) {
+		integers[i]=newIntegers[i];}
+		
+		
+}
+}
+
+
